@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir ~/.config
+sudo mkdir ~/.config
 
 #packages
 sudo  pacman -S firefox rofi nitrogen picom alacritty mpv libreoffice pipewire pipewire-alsa pipewire-pulse easyeffects make blender gimp newsboat
@@ -15,12 +15,12 @@ sudo pacman -S fcitx-im fcitx-mozc
 git clone https://github.com/CamnJB/dotfiles
 
 #copy files to locations
-cp ~/dotfiles/.xinitrc ~/
-cp ~/dotfiles/xmonad ~/.config/
-cp ~/dotfiles/.xprofile ~/
-cp ~/dotfiles/.vimrc ~/
-cp ~/dotfiles/.bashrc ~/
-cp ~/dotfiles/xmonad ~/.config/
+sudo cp ~/dotfiles/.xinitrc ~/
+sudo cp ~/dotfiles/xmonad ~/.config/
+sudo cp ~/dotfiles/.xprofile ~/
+sudo cp ~/dotfiles/.vimrc ~/
+sudo cp ~/dotfiles/.bashrc ~/
+sudo cp ~/dotfiles/xmonad ~/.config/
 
 #xmonad
 sudo pacman -S xorg-server xorg-apps xorg-xinit  xorg-xmessage libx11 libxft libxinerama libxrandr libxss pkgconf
@@ -43,3 +43,5 @@ stack install
 cd ~/.config
 git clone https://github.com/pystardust/ani-cli.git ~/.config
 sudo make ~/.config/ani-cli/
+
+startx
