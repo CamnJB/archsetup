@@ -12,7 +12,7 @@ sudo pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts  o
 sudo pacman -S fcitx-im fcitx-mozc
 
 #my git repo
-git clone https://github.com/CamnJB/dotfiles
+git clone https://github.com/CamnJB/dotfiles ~/
 
 #copy files to locations
 sudo cp ~/dotfiles/.xinitrc ~/
@@ -24,9 +24,6 @@ sudo cp ~/dotfiles/xmonad ~/.config/
 
 #xmonad
 sudo pacman -S xorg-server xorg-apps xorg-xinit  xorg-xmessage libx11 libxft libxinerama libxrandr libxss pkgconf
-
- #copy files to locations
-
 
 git clone https://github.com/xmonad/xmonad ~/.config/xmonad
 git clone https://github.com/xmonad/xmonad-contrib ~/.config/monad
