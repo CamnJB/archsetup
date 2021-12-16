@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#packages
+pacman -S firefox rofi nitrogen picom alacritty mpv libreoffice pipewire pipewire-alsa pipewire-pulse easyeffects make blender gimp newsboat
+
+#japanese fonts
+pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts  otf-ipafont ttf-hanazono ttf-sazanami
+
+#japanese inputs mozc
+pacman -S fcitx-im fcitx-mozc
+
+#my git repo
+git clone https://github.com/CamnJB/dotfiles
+
+#copy files to locations
+cp ~/dotfiles/.xinitrc ~/
+cp ~/dotfiles/xmonad ~/.config/
+cp ~/dotfiles/.xprofile ~/
+cp ~/dotfiles/.vimrc ~/
+cp ~/dotfiles/.bashrc ~/
+
+#xmonad
+pacman -S xorg-server xorg-apps xorg-xinit  xorg-xmessage libx11 libxft libxinerama libxrandr libxss pkgconf
+
+ #copy files to locations
+  cp ~/dotfiles/.xinitrc ~/
+  cp ~/dotfiles/xmonad ~/.config/
+
+git clone https://github.com/xmonad/xmonad
+git clone https://github.com/xmonad/xmonad-contrib
+
+pacman -S stack
+stack init
+
+PATH=$PATH:~/.local/bin
+export PATH
+
+stack install  
+
+#ani-cli
+cd ~/.config
+git clone https://github.com/pystardust/ani-cli.git
+cd ani-cli
+make
