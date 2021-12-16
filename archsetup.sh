@@ -36,9 +36,10 @@ stack install
 cd 
 
 #ani-cli
-sudo git clone https://github.com/pystardust/ani-cli.git ~/.config
+git clone https://github.com/pystardust/ani-cli.git ~/.config
 
-sudo make ~/.config/ani-cli/
+cd ~/.config/ani-cli 
+sudo make
 
 cd
 
