@@ -17,13 +17,18 @@ wait #download my dotfiles
 echo "downloading dotfiles"
 sudo git clone https://github.com/CamnJB/dotfiles ~/
 
-echo "copying dotfiles to correct locations"
 wait #copy files to locations
+echo "copying dotfiles to correct locations"
 sudo cp ~/dotfiles/.xinitrc ~/
+wait
 sudo cp ~/dotfiles/xmonad ~/.config/
+wait
 sudo cp ~/dotfiles/.xprofile ~/
+wait
 sudo cp ~/dotfiles/.vimrc ~/
+wait
 sudo cp ~/dotfiles/.bashrc ~/
+wait
 sudo cp ~/dotfiles/xmonad ~/.config/
 
 wait #download xmonad depend
