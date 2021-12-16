@@ -12,7 +12,7 @@ sudo pacman -S fcitx-im fcitx-mozc
 
 wait #download my dotfiles
 #my git repo
-git clone https://github.com/CamnJB/dotfiles ~/
+sudo git clone https://github.com/CamnJB/dotfiles ~/
 
 wait #copy files to locations
 sudo cp ~/dotfiles/.xinitrc ~/
@@ -26,22 +26,22 @@ wait #download xmonad depend
 sudo pacman -S xorg-server xorg-apps xorg-xinit  xorg-xmessage libx11 libxft libxinerama libxrandr libxss pkgconf
 
 wait #clone xmonad git
-git clone https://github.com/xmonad/xmonad ~/.config/xmonad
-git clone https://github.com/xmonad/xmonad-contrib ~/.config/monad
+sudo git clone https://github.com/xmonad/xmonad ~/.config/xmonad
+sudo git clone https://github.com/xmonad/xmonad-contrib ~/.config/monad
 
 wait
-stack init ~/.config/xmonad
+sudo stack init ~/.config/xmonad
 
 wait #set environment path
-PATH=$PATH:~/.local/bin
-export PATH
+sudo PATH=$PATH:~/.local/bin
+sudo export PATH
 
 wait
-stack install  ~/.config/xmonad
+sudo stack install  ~/.config/xmonad
 
 wait
 #ani-cli
-git clone https://github.com/pystardust/ani-cli.git ~/.config
+sudo git clone https://github.com/pystardust/ani-cli.git ~/.config
 
 wait
 sudo make ~/.config/ani-cli/
