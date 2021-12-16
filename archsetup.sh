@@ -20,16 +20,16 @@ cp ~/dotfiles/xmonad ~/.config/
 cp ~/dotfiles/.xprofile ~/
 cp ~/dotfiles/.vimrc ~/
 cp ~/dotfiles/.bashrc ~/
+cp ~/dotfiles/xmonad ~/.config/
 
 #xmonad
 sudo pacman -S xorg-server xorg-apps xorg-xinit  xorg-xmessage libx11 libxft libxinerama libxrandr libxss pkgconf
 
  #copy files to locations
-  cp ~/dotfiles/.xinitrc ~/
-  cp ~/dotfiles/xmonad ~/.config/
 
-git clone https://github.com/xmonad/xmonad
-git clone https://github.com/xmonad/xmonad-contrib
+
+git clone https://github.com/xmonad/xmonad ~/.config/xmonad
+git clone https://github.com/xmonad/xmonad-contrib ~/.config/monad
 
 sudo pacman -S stack
 stack init
@@ -41,6 +41,5 @@ stack install
 
 #ani-cli
 cd ~/.config
-git clone https://github.com/pystardust/ani-cli.git
-cd ani-cli
-sudo make
+git clone https://github.com/pystardust/ani-cli.git ~/.config
+sudo make ~/.config/ani-cli/
