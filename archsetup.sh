@@ -27,13 +27,13 @@ sudo stack init
 PATH=$PATH:~/.local/bin
 export PATH
 
-stack install
+sudo stack install
 
 #ani-cli clone & build
-cd ~/.config
-git clone https://github.com/pystardust/ani-cli.git
-cd ~/.config/ani-cli 
-sudo make
+#cd ~/.config
+#git clone https://github.com/pystardust/ani-cli.git
+#cd ~/.config/ani-cli 
+#sudo make
 
 #boot to xmonad
 cd
