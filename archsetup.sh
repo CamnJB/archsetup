@@ -15,7 +15,7 @@ sudo pacman -S fcitx-im fcitx-mozc
 cd
 sudo git clone https://github.com/CamnJB/dotfiles
 sudo cp -L ~/dotfiles/.xinitrc dotfiles/.xprofile ~/dotfiles/.vimrc ~/dotfiles/.bashrc ~/
-sudo cp -L ~/dotfiles/xmonad ~/.config/
+sudo cp -L ~/dotfiles/.xmonad ~/.config/xmonad
 
 #clone & build xmonad
 cd ~/.config/xmonad
