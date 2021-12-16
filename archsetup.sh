@@ -16,7 +16,7 @@ sudo pacman -S fcitx-im fcitx-mozc
 
 #download my dotfiles
 #my git repo
-sudo git clone https://github.com/CamnJB/dotfiles ~/
+sudo git clone https://github.com/CamnJB/dotfiles
 
 #copy files to locations
 sudo cp ~/dotfiles/.xinitrc ~/ && sudo cp ~/dotfiles/xmonad ~/.config/ && sudo cp ~/dotfiles/.xprofile ~/ && sudo cp ~/dotfiles/.vimrc ~/ && sudo cp ~/dotfiles/.bashrc ~/ && sudo cp ~/dotfiles/xmonad ~/.config/
