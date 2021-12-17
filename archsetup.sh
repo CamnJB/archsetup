@@ -15,8 +15,8 @@ sudo pacman -S fcitx-im fcitx-mozc
 #syLink dotfiles
 cd
 sudo git clone https://github.com/CamnJB/dotfiles.git
-sudo cp -L ~/dotfiles/dotfiles/.xinitrc dotfiles/dotfiles/.xprofile ~/dotfiles/dotfiles/.vimrc ~/dotfiles/dotfiles/.bashrc ~/
-sudo cp -rL ~/dotfiles/dotfiles/.config ~/
+sudo cp ~/dotfiles/dotfiles/.xinitrc dotfiles/dotfiles/.xprofile ~/dotfiles/dotfiles/.vimrc ~/dotfiles/dotfiles/.bashrc ~/
+sudo cp -r ~/dotfiles/dotfiles/.config ~/
 
 #clone & build xmonad
 cd ~/.config/xmonad
