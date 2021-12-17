@@ -23,11 +23,7 @@ cd ~/.config/xmonad
 sudo git clone https://github.com/xmonad/xmonad
 sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo stack init
-
-cd
 export PATH=~/.local/bin:$PATH
-
-cd ~/.config/xmonad
 sudo stack install
 
 #ani-cli clone & build
