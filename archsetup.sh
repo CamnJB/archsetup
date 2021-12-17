@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd
-sudo mkdir ~/.config
 
 sudo pacman -S firefox rofi nitrogen picom alacritty mpv libreoffice pipewire pipewire-alsa pipewire-pulse easyeffects make blender gimp newsboat
 #download xmonad depend
@@ -13,10 +12,9 @@ sudo pacman -S fcitx-im fcitx-mozc
 
 #syLink dotfiles
 cd
-sudo git clone https://github.com/CamnJB/dotfiles
+sudo git clone https://github.com/CamnJB/dotfiles.git
 sudo cp -L ~/dotfiles/.xinitrc dotfiles/.xprofile ~/dotfiles/.vimrc ~/dotfiles/.bashrc ~/
-sudo cp -rL ~/dotfiles/.xmonad ~/.config/
-sudo mv ~/.config/.xmonad ~/.config/xmonad
+sudo cp -rL ~/dotfiles/.config ~/
 
 #clone & build xmonad
 cd ~/.config/xmonad
@@ -25,8 +23,9 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo stack init
 
 cd
-PATH=$PATH:~/.local/bin
-export PATH
+source .bashrc
+#PATH=$PATH:~/.local/bin
+#export PATH
 
 cd ~/.config/xmonad
 sudo stack install
