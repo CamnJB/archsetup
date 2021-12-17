@@ -25,8 +25,7 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo stack init
 
 cd
-PATH=$PATH:~/.local/bin
-export PATH
+export PATH=~/.local/bin:$PATH
 
 cd ~/.config/xmonad
 sudo stack install
