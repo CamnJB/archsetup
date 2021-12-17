@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd
+sudo mkdir ~/.local
+sudo mkdir ~/.local/bin
 
 sudo pacman -S firefox rofi nitrogen picom alacritty mpv libreoffice pipewire pipewire-alsa pipewire-pulse easyeffects make blender gimp newsboat
 #download xmonad depend
@@ -23,7 +25,6 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo stack init
 
 cd
-sudo mkdir ~/.local/bin
 PATH=$PATH:~/.local/bin
 export PATH
 
