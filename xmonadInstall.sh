@@ -18,12 +18,12 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 #####BUILD WITH STACK#####
 sudo pacman -S stack
 sudo paman -Syu
-sudo stack init --allow-different-user
+stack init --allow-different-user
 echo $PATH
 export PATH=$PATH:~./.local/bin
 echo $PATH >> ~/.bashrc
 source ~/.bashrc
-sudo stack install --allow-different-user
+stack install --allow-different-user
 
 #####BUILD WITH CABAL#####
 #sudo pacman -S cabal-install
