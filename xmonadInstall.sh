@@ -12,13 +12,13 @@ echo "main :: IO ()" >> xmonad.hs
 echo "main = xmonad def" >> xmonad.hs
 
 #clone xmonad from git
-sudo git clone https://github.com/xmonad/xmonad
-sudo git clone https://github.com/xmonad/xmonad-contrib
+git clone https://github.com/xmonad/xmonad
+git clone https://github.com/xmonad/xmonad-contrib
 
 #####BUILD WITH STACK#####
 sudo pacman -S stack
 sudo paman -Syu
-sudo stack init #--allow-different-user
+stack init #--allow-different-user
 PATH=$PATH:~/.local/bin && export PATH && echo $PATH >> ~/.bashrc
 #sudo source ~/.bashrc
 echo $PATH
