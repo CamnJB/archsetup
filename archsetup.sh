@@ -1,8 +1,7 @@
 #!/bin/bash
 
 cd
-sudo mkdir ~/.local
-sudo mkdir ~/.local/bin
+sudo mkdir -p ~/.local/bin
 
 sudo pacman -S base-devel firefox rofi nitrogen picom alacritty mpv libreoffice pipewire pipewire-alsa pipewire-pulse easyeffects make blender gimp newsboat
 
