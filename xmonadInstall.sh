@@ -19,7 +19,7 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo pacman -S stack
 sudo paman -Syu
 sudo stack init #--allow-different-user
-PATH=$PATH:~./.local/bin && export PATH && echo $PATH >> ~/.bashrc
+PATH=$PATH:~/.local/bin && export PATH && echo $PATH >> ~/.bashrc
 #sudo source ~/.bashrc
 echo $PATH
 stack install #--allow-different-user
