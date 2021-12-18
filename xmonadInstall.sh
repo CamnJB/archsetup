@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Download xmonad dependencies
 sudo pacman -S xorg-server xorg-apps xorg-xinit libx11 libxft libxinerama libxrandr libxss pkgconf
 
