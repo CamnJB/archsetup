@@ -5,8 +5,8 @@ sudo pacman -S xorg-server xorg-apps xorg-xinit libx11 libxft libxinerama libxra
 sudo pacman -Syu
 
 #create directories for xmonad
-mkdir -p ~/.local/bin
-mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
+sudo mkdir -p ~/.local/bin
+sudo mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
 touch xmonad.hs
 echo "import XMonad" >> xmonad.hs
 echo "main :: IO ()" >> xmonad.hs
@@ -20,19 +20,18 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 sudo pacman -S stack
 sudo paman -Syu
 stack init --allow-different-user
-echo $PATH
-export PATH=$PATH:~./.local/bin
-echo $PATH >> ~/.bashrc
+sudo export PATH=$PATH:~./.local/bin && echo $PATH >> ~/.bashrc
 source ~/.bashrc
+echo $PATH
 stack install --allow-different-user
 
 #####BUILD WITH CABAL#####
 #sudo pacman -S cabal-install
 #touch cabal.project && echo "packages: */*.cabal" >> cabal.project #If not used cabal will use latest packages from Hackage
 #sudo cabal update
-#echo $PATH
 #PATH=$PATH:~/.cabal/bin/xmonad
 #echo $PATH >> ~/.bashrc
 #source ~/.bashrc
+#echo $PATH
 #cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #cabal install --package-env=$HOME/.config/xmonad xmonad
