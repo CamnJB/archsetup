@@ -21,6 +21,7 @@ sudo pacman -S stack
 sudo paman -Syu
 echo $PATH
 export PATH=$PATH:~./.local/bin
+echo $PATH
 sudo stack init
 sudo stack install
 
@@ -30,5 +31,6 @@ sudo stack install
 #sudo cabal update
 #echo $PATH
 #PATH=$PATH:~/.cabal/bin/xmonad
+#echo $PATH
 #sudo cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #sudo cabal install --package-env=$HOME/.config/xmonad xmonad
