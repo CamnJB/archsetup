@@ -2,6 +2,7 @@
 
 #Download xmonad dependencies
 sudo pacman -S xorg-server xorg-apps xorg-xinit libx11 libxft libxinerama libxrandr libxss pkgconf
+sudo pacman -Syu
 
 #create directories for xmonad
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
@@ -13,6 +14,7 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 #####BUILD WITH STACK#####
 #build with stack
 sudo pacman -S stack
+sudo paman -Syu
 echo $PATH
 export PATH=$PATH:~./.local/bin
 stack init
