@@ -6,7 +6,6 @@ sudo pacman -Syu
 
 #create directories for xmonad
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
-sudo chmod +rwx ~/.config/xmonad
 touch xmonad.hs
 echo "import XMonad" >> xmonad.hs
 echo "main :: IO ()" >> xmonad.hs
@@ -23,8 +22,8 @@ sudo paman -Syu
 echo $PATH
 export PATH=$PATH:~./.local/bin
 echo $PATH
-sudo stack init
-sudo stack install
+sudo stack init --allow-different-user
+sudo stack install --allow-different-user
 
 #####BUILD WITH CABAL#####
 #sudo pacman -S cabal-install
