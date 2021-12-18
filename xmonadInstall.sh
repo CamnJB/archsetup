@@ -31,7 +31,7 @@ sudo stack install --allow-different-user
 #sudo cabal update
 #echo $PATH
 #PATH=$PATH:~/.cabal/bin/xmonad
-#echo $PATH >> .bashrc
-#source .bashrc
+#echo $PATH >> ~/.bashrc
+#source ~/.bashrc
 #sudo cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #sudo cabal install --package-env=$HOME/.config/xmonad xmonad
