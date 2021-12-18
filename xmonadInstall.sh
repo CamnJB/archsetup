@@ -21,8 +21,8 @@ sudo paman -Syu
 sudo stack init --allow-different-user
 echo $PATH
 export PATH=$PATH:~./.local/bin
-echo $PATH >> .bashrc
-source .bashrc
+echo $PATH >> ~/.bashrc
+source ~/.bashrc
 sudo stack install --allow-different-user
 
 #####BUILD WITH CABAL#####
