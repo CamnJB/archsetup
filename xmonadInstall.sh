@@ -33,5 +33,5 @@ stack install --allow-different-user
 #PATH=$PATH:~/.cabal/bin/xmonad
 #echo $PATH >> ~/.bashrc
 #source ~/.bashrc
-#sudo cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
-#sudo cabal install --package-env=$HOME/.config/xmonad xmonad
+#cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
+#cabal install --package-env=$HOME/.config/xmonad xmonad
