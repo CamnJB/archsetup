@@ -21,7 +21,7 @@ sudo pacman -S stack
 sudo paman -Syu
 stack init --allow-different-user
 sudo export PATH=$PATH:~./.local/bin && echo $PATH >> ~/.bashrc
-source ~/.bashrc
+sudo source ~/.bashrc
 echo $PATH
 stack install --allow-different-user
 
@@ -29,9 +29,9 @@ stack install --allow-different-user
 #sudo pacman -S cabal-install
 #touch cabal.project && echo "packages: */*.cabal" >> cabal.project #If not used cabal will use latest packages from Hackage
 #sudo cabal update
-#PATH=$PATH:~/.cabal/bin/xmonad
+#sudo PATH=$PATH:~/.cabal/bin/xmonad
 #echo $PATH >> ~/.bashrc
-#source ~/.bashrc
+#sudo source ~/.bashrc
 #echo $PATH
 #cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #cabal install --package-env=$HOME/.config/xmonad xmonad
