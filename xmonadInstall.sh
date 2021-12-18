@@ -6,6 +6,10 @@ sudo pacman -Syu
 
 #create directories for xmonad
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
+touch xmonad.hs
+echo "import XMonad" >> xmonad.hs
+echo "main :: IO ()" >> xmonad.hs
+echo "main = xmonad def" >> xmonad.hs
 
 #clone xmonad from git
 sudo git clone https://github.com/xmonad/xmonad
