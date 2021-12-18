@@ -18,10 +18,11 @@ sudo git clone https://github.com/xmonad/xmonad-contrib
 #####BUILD WITH STACK#####
 sudo pacman -S stack
 sudo paman -Syu
+sudo stack init --allow-different-user
 echo $PATH
 export PATH=$PATH:~./.local/bin
-echo $PATH
-sudo stack init --allow-different-user
+echo $PATH >> .bashrc
+source .bashrc
 sudo stack install --allow-different-user
 
 #####BUILD WITH CABAL#####
@@ -30,6 +31,7 @@ sudo stack install --allow-different-user
 #sudo cabal update
 #echo $PATH
 #PATH=$PATH:~/.cabal/bin/xmonad
-#echo $PATH
+#echo $PATH >> .bashrc
+#source .bashrc
 #sudo cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #sudo cabal install --package-env=$HOME/.config/xmonad xmonad
