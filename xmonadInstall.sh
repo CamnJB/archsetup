@@ -6,7 +6,7 @@ sudo pacman -Syu
 
 #create directories for xmonad
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
-chmod +rwx
+sudo chmod +rwx ~/.config/xmonad
 touch xmonad.hs
 echo "import XMonad" >> xmonad.hs
 echo "main :: IO ()" >> xmonad.hs
