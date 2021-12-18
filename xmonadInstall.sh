@@ -16,7 +16,6 @@ sudo git clone https://github.com/xmonad/xmonad
 sudo git clone https://github.com/xmonad/xmonad-contrib
 
 #####BUILD WITH STACK#####
-#build with stack
 sudo pacman -S stack
 sudo paman -Syu
 echo $PATH
