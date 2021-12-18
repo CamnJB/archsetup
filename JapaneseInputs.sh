@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Installs Japanese fonts
 sudo pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts  otf-ipafont ttf-hanazono ttf-sazanami
 #Installs mozc for Japanese inputs
