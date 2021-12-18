@@ -21,15 +21,14 @@ sudo pacman -S stack
 sudo paman -Syu
 echo $PATH
 export PATH=$PATH:~./.local/bin
-stack init
-stack install
+sudo stack init
+sudo stack install
 
 #####BUILD WITH CABAL#####
-#build with cabal-install
 #sudo pacman -S cabal-install
 #touch cabal.project && echo "packages: */*.cabal" >> cabal.project #If not used cabal will use latest packages from Hackage
-#cabal update
+#sudo cabal update
 #echo $PATH
 #PATH=$PATH:~/.cabal/bin/xmonad
-#cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
-#cabal install --package-env=$HOME/.config/xmonad xmonad
+#sudo cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
+#sudo cabal install --package-env=$HOME/.config/xmonad xmonad
