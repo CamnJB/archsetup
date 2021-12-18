@@ -5,6 +5,7 @@ sudo pacman -S xorg-server xorg-apps xorg-xinit libx11 libxft libxinerama libxra
 sudo pacman -Syu
 
 #create directories for xmonad
+mkdir -p ~/.local/bin
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
 touch xmonad.hs
 echo "import XMonad" >> xmonad.hs
