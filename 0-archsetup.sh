@@ -7,7 +7,7 @@ chmod +x ./1-xmonad.sh ./2-audio.sh ./dotfiles.sh ./ani-cli.sh ./JapaneseInput.s
 
 ./1-xmonad.sh
 #./2-polybar.sh
-#./2-xmobar.sh
+./2-xmobar.sh
 ./3-audio.sh
 ./dotfiles.sh
 ./ani-cli.sh
