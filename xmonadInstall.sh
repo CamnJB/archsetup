@@ -29,7 +29,7 @@ stack install #--allow-different-user
 #touch cabal.project && echo "packages: */*.cabal" >> cabal.project #If not used cabal will use latest packages from Hackage
 #sudo cabal update
 #PATH=$PATH:~/.cabal/bin/xmonad && export PATH && echo $PATH >> ~/.bashrc
-#sudo source ~/.bashrc
+#source ~/.bashrc
 #echo $PATH
 #cabal install --package-env=$HOME/.config/xmonad  --lib xmonad xmoand-contrib
 #cabal install --package-env=$HOME/.config/xmonad xmonad
