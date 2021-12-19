@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S pipewire pipewire-alsa pipewire-pulse easyeffects
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse easyeffects pavucontrol
