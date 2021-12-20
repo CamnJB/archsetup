@@ -14,4 +14,4 @@ chmod +x ./1-xmonad.sh ./2-audio.sh ./dotfiles.sh ./ani-cli.sh ./JapaneseInput.s
 ./JapaneseInput.sh
 
 #boot to xmonad
-reboot
+sudo reboot
